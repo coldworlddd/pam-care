@@ -5,32 +5,32 @@ export default function Home() {
       <header className="sticky top-0 z-50 bg-white border-b border-gray-100">
         <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <h1 className="text-2xl font-bold text-purple-700">Pamcare AI</h1>
+            <h1 className="text-xl font-bold text-primary">Pamcare AI</h1>
             <span className="text-sm text-gray-500">
               Intelligent Health Management
             </span>
           </div>
           <div className="hidden md:flex items-center gap-8">
-            <a
+            {/* <a
               href="#conditions"
-              className="text-gray-600 hover:text-purple-700"
+              className="text-gray-600 hover:text-primary"
             >
               Conditions We Support
+            </a> */}
+            <a href="#services" className="text-gray-600 hover:text-primary">
+               Features
             </a>
-            <a href="#services" className="text-gray-600 hover:text-red-500">
-              Key Features
+            <a href="#pricing" className="text-gray-600 hover:text-primary">
+              Pricing
             </a>
-            <a href="#pricing" className="text-gray-600 hover:text-purple-700">
-              Pricing & Access
-            </a>
-            <a href="#inside" className="text-gray-600 hover:text-purple-700">
+            <a href="#inside" className="text-gray-600 hover:text-primary">
               About Pamcare AI{" "}
             </a>
-            <a href="#reviews" className="text-gray-600 hover:text-purple-700">
+            {/* <a href="#reviews" className="text-gray-600 hover:text-primary">
               Success Stories
-            </a>
+            </a> */}
           </div>
-          <button className="bg-purple-700 text-white px-6 py-2 rounded-full hover:bg-purple-800 transition-colors">
+          <button className="bg-primary text-white px-6 py-2 rounded-full hover:bg-primary/90 transition-colors">
             Get Started
           </button>
         </nav>
@@ -41,27 +41,27 @@ export default function Home() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Column */}
           <div className="space-y-8">
-            <h2 className="text-5xl lg:text-6xl font-bold text-purple-900 leading-tight">
+            <h2 className="text-5xl lg:text-6xl font-bold text-primary leading-tight">
               Smarter Care for Complex Health Needs.{" "}
             </h2>
             <ul className="space-y-4 text-gray-700 text-lg">
               <li className="flex items-center gap-3">
-                <span className="text-purple-700 font-semibold">1.</span>
+                <span className="text-primary font-semibold">1.</span>
                 <span>Personalized AI Checkups and Risk Alerts</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-purple-700 font-semibold">2.</span>
+                <span className="text-primary font-semibold">2.</span>
                 <span>
                   Dedicated Trackers for Arthritis, Pregnancy, & Malaria
                 </span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-purple-700 font-semibold">3.</span>
+                <span className="text-primary font-semibold">3.</span>
                 <span>Trusted Resource Library, and Symptom Guidance</span>
               </li>
             </ul>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="flex items-center justify-center gap-2 bg-purple-700 text-white px-6 py-3 rounded-full hover:bg-purple-800 transition-colors">
+              <button className="flex items-center justify-center gap-2 bg-primary text-white px-6 py-3 rounded-full hover:bg-primary/90 transition-colors">
                 <svg
                   className="w-6 h-6"
                   fill="currentColor"
@@ -85,7 +85,7 @@ export default function Home() {
             <div className="flex gap-8">
               <div className="flex items-center gap-2">
                 <svg
-                  className="w-5 h-5 text-green-500"
+                  className="w-5 h-5 text-primary"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -97,7 +97,7 @@ export default function Home() {
               </div>
               <div className="flex items-center gap-2">
                 <svg
-                  className="w-5 h-5 text-green-500"
+                  className="w-5 h-5 text-primary"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -114,14 +114,14 @@ export default function Home() {
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative w-64 h-[600px]">
               {/* Decorative circle */}
-              <div className="absolute -top-10 -right-10 w-64 h-64 bg-pink-100 rounded-full opacity-50 blur-3xl"></div>
+              <div className="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-full opacity-50 blur-3xl"></div>
 
               {/* Phone frame */}
               <div className="relative bg-black rounded-[2.5rem] p-2 shadow-2xl">
                 <div className="bg-white rounded-[2rem] h-full overflow-hidden">
                   {/* Phone header */}
-                  <div className="bg-purple-700 text-white px-4 py-3 flex items-center justify-between">
-                    <span className="font-bold">Docta</span>
+                  <div className="bg-primary text-white px-4 py-3 flex items-center justify-between">
+                    <span className="font-bold">Palmcare AI</span>
                     <div className="flex gap-1">
                       <div className="w-1 h-1 bg-white rounded-full"></div>
                       <div className="w-1 h-1 bg-white rounded-full"></div>
@@ -140,25 +140,25 @@ export default function Home() {
                     <div className="space-y-3 mt-6">
                       <div className="bg-gray-100 rounded-lg p-3">
                         <p className="text-sm">
-                          Hello I'm suffering from fever since 3 days.
+                          Hello I&apos;m suffering from fever since 3 days.
                         </p>
                       </div>
-                      <div className="bg-purple-100 rounded-lg p-3 ml-4">
+                      <div className="bg-primary/10 rounded-lg p-3 ml-4">
                         <p className="text-sm">
                           Okay, no worries we will know how you get now?
                         </p>
                       </div>
                     </div>
 
-                    <button className="w-full bg-purple-700 text-white py-3 rounded-lg font-medium">
+                    <button className="w-full bg-primary text-white py-3 rounded-lg font-medium">
                       Doctor Online
                     </button>
 
                     {/* Doctor image placeholder */}
                     <div className="mt-8 flex justify-center">
-                      <div className="w-32 h-32 bg-purple-200 rounded-full flex items-center justify-center">
+                      <div className="w-32 h-32 bg-primary/20 rounded-full flex items-center justify-center">
                         <svg
-                          className="w-16 h-16 text-purple-600"
+                          className="w-16 h-16 text-primary"
                           fill="currentColor"
                           viewBox="0 0 20 20"
                         >
@@ -187,14 +187,14 @@ export default function Home() {
               <p className="text-sm text-gray-500 uppercase tracking-wide">
                 Why simple is better
               </p>
-              <h2 className="text-4xl lg:text-5xl font-bold text-purple-900">
+              <h2 className="text-4xl lg:text-5xl font-bold text-primary">
                 Smart and affordable.
               </h2>
               <div className="space-y-6">
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                  <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                     <svg
-                      className="w-6 h-6 text-purple-700"
+                      className="w-6 h-6 text-primary"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -218,9 +218,9 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                  <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                     <svg
-                      className="w-6 h-6 text-purple-700"
+                      className="w-6 h-6 text-primary"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -235,7 +235,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">
-                      A price that doesn't hurt
+                      A price that doesn&apos;t hurt
                     </h3>
                     <p className="text-gray-600">
                       Your visit is $39 - and even less with insurance.
@@ -243,9 +243,9 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                  <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                     <svg
-                      className="w-6 h-6 text-purple-700"
+                      className="w-6 h-6 text-primary"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -263,7 +263,7 @@ export default function Home() {
                       Prescriptions & treatment plans
                     </h3>
                     <p className="text-gray-600">
-                      You'll get a customized treatment plan, plus.
+                      You&apos;ll get a customized treatment plan, plus.
                     </p>
                   </div>
                 </div>
@@ -272,12 +272,12 @@ export default function Home() {
 
             {/* Left Column - Image placeholder */}
             <div className="lg:order-1 relative">
-              <div className="absolute -top-10 -left-10 w-64 h-64 bg-pink-100 rounded-full opacity-50 blur-3xl"></div>
-              <div className="relative bg-blue-100 rounded-2xl p-8 flex items-center justify-center h-96">
+              <div className="absolute -top-10 -left-10 w-64 h-64 bg-primary/10 rounded-full opacity-50 blur-3xl"></div>
+              <div className="relative bg-primary/10 rounded-2xl p-8 flex items-center justify-center h-96">
                 <div className="text-center">
                   <div className="w-32 h-32 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
                     <svg
-                      className="w-16 h-16 text-blue-600"
+                      className="w-16 h-16 text-primary"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -303,7 +303,7 @@ export default function Home() {
             <p className="text-sm text-gray-500 uppercase tracking-wide mb-2">
               How it works
             </p>
-            <h2 className="text-4xl lg:text-5xl font-bold text-purple-900">
+            <h2 className="text-4xl lg:text-5xl font-bold text-primary">
               A step by step guide
             </h2>
             <p className="text-xl text-gray-600 mt-2">
@@ -315,12 +315,12 @@ export default function Home() {
             {/* Step 1 */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="relative">
-                <div className="absolute -top-10 -left-10 w-64 h-64 bg-blue-100 rounded-2xl opacity-50 blur-3xl"></div>
-                <div className="relative bg-blue-50 rounded-2xl p-8 flex items-center justify-center h-96">
+                <div className="absolute -top-10 -left-10 w-64 h-64 bg-primary/10 rounded-2xl opacity-50 blur-3xl"></div>
+                <div className="relative bg-primary/5 rounded-2xl p-8 flex items-center justify-center h-96">
                   <div className="text-center">
                     <div className="w-32 h-32 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
                       <svg
-                        className="w-16 h-16 text-blue-600"
+                        className="w-16 h-16 text-primary"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -336,7 +336,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-purple-900">
+                <h3 className="text-2xl font-bold text-primary">
                   Answer a few questions
                 </h3>
                 <p className="text-gray-600 text-lg">
@@ -431,7 +431,7 @@ export default function Home() {
             {/* Step 2 */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-4 lg:order-2">
-                <h3 className="text-2xl font-bold text-purple-900">
+                <h3 className="text-2xl font-bold text-primary">
                   Diagnosis by real people, really fast
                 </h3>
                 <p className="text-gray-600 text-lg">
@@ -443,18 +443,18 @@ export default function Home() {
                   <p className="text-sm text-gray-700 mb-2">
                     Medical information and diagnosis details...
                   </p>
-                  <button className="text-purple-700 font-medium text-sm">
+                  <button className="text-primary font-medium text-sm">
                     View more →
                   </button>
                 </div>
               </div>
               <div className="relative lg:order-1">
-                <div className="absolute -top-10 -right-10 w-64 h-64 bg-pink-100 rounded-2xl opacity-50 blur-3xl"></div>
-                <div className="relative bg-pink-50 rounded-2xl p-8 flex items-center justify-center h-96">
+                <div className="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-2xl opacity-50 blur-3xl"></div>
+                <div className="relative bg-primary/5 rounded-2xl p-8 flex items-center justify-center h-96">
                   <div className="text-center">
                     <div className="w-32 h-32 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
                       <svg
-                        className="w-16 h-16 text-pink-600"
+                        className="w-16 h-16 text-primary"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -474,12 +474,12 @@ export default function Home() {
             {/* Step 3 */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="relative">
-                <div className="absolute -top-10 -left-10 w-64 h-64 bg-blue-100 rounded-2xl opacity-50 blur-3xl"></div>
-                <div className="relative bg-blue-50 rounded-2xl p-8 flex items-center justify-center h-96">
+                <div className="absolute -top-10 -left-10 w-64 h-64 bg-primary/10 rounded-2xl opacity-50 blur-3xl"></div>
+                <div className="relative bg-primary/5 rounded-2xl p-8 flex items-center justify-center h-96">
                   <div className="text-center">
                     <div className="w-32 h-32 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
                       <svg
-                        className="w-16 h-16 text-blue-600"
+                        className="w-16 h-16 text-primary"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -491,7 +491,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-purple-900">
+                <h3 className="text-2xl font-bold text-primary">
                   Payment & Insurance
                 </h3>
                 <p className="text-gray-600 text-lg">
@@ -530,7 +530,7 @@ export default function Home() {
                   </div>
                   <div className="border-t border-gray-200 pt-3 flex justify-between items-center">
                     <span className="font-semibold">Total</span>
-                    <span className="text-2xl font-bold text-purple-700">
+                    <span className="text-2xl font-bold text-primary">
                       $39
                     </span>
                   </div>
@@ -541,19 +541,19 @@ export default function Home() {
             {/* Step 4 */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-4 lg:order-2">
-                <h3 className="text-2xl font-bold text-purple-900">
+                <h3 className="text-2xl font-bold text-primary">
                   Start feeling better
                 </h3>
                 <p className="text-gray-600 text-lg">
                   Once your treatment plan is in place, you can start feeling
-                  better. We'll follow up with you to ensure your recovery is on
-                  track.
+                  better. We&apos;ll follow up with you to ensure your recovery
+                  is on track.
                 </p>
                 <div className="bg-white border border-gray-200 rounded-lg p-4 space-y-3">
                   <div className="flex items-center gap-3">
-                    <div className="w-5 h-5 border-2 border-purple-700 rounded flex items-center justify-center">
+                    <div className="w-5 h-5 border-2 border-primary rounded flex items-center justify-center">
                       <svg
-                        className="w-3 h-3 text-purple-700"
+                        className="w-3 h-3 text-primary"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -567,9 +567,9 @@ export default function Home() {
                     <span className="text-gray-700">Take your medication</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <div className="w-5 h-5 border-2 border-purple-700 rounded flex items-center justify-center">
+                    <div className="w-5 h-5 border-2 border-primary rounded flex items-center justify-center">
                       <svg
-                        className="w-3 h-3 text-purple-700"
+                        className="w-3 h-3 text-primary"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -583,9 +583,9 @@ export default function Home() {
                     <span className="text-gray-700">Rest</span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <div className="w-5 h-5 border-2 border-purple-700 rounded flex items-center justify-center">
+                    <div className="w-5 h-5 border-2 border-primary rounded flex items-center justify-center">
                       <svg
-                        className="w-3 h-3 text-purple-700"
+                        className="w-3 h-3 text-primary"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -601,9 +601,9 @@ export default function Home() {
                     </span>
                   </div>
                   <div className="flex items-center gap-3">
-                    <div className="w-5 h-5 border-2 border-purple-700 rounded flex items-center justify-center">
+                    <div className="w-5 h-5 border-2 border-primary rounded flex items-center justify-center">
                       <svg
-                        className="w-3 h-3 text-purple-700"
+                        className="w-3 h-3 text-primary"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -619,12 +619,12 @@ export default function Home() {
                 </div>
               </div>
               <div className="relative lg:order-1">
-                <div className="absolute -top-10 -right-10 w-64 h-64 bg-pink-100 rounded-2xl opacity-50 blur-3xl"></div>
-                <div className="relative bg-pink-50 rounded-2xl p-8 flex items-center justify-center h-96">
+                <div className="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-2xl opacity-50 blur-3xl"></div>
+                <div className="relative bg-primary/5 rounded-2xl p-8 flex items-center justify-center h-96">
                   <div className="text-center">
                     <div className="w-32 h-32 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
                       <svg
-                        className="w-16 h-16 text-pink-600"
+                        className="w-16 h-16 text-primary"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -650,10 +650,10 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Image */}
             <div className="relative">
-              <div className="absolute -top-10 -left-10 w-64 h-64 bg-blue-100 rounded-full opacity-50 blur-3xl"></div>
-              <div className="relative bg-blue-50 rounded-2xl p-8 flex items-center justify-center h-96">
+              <div className="absolute -top-10 -left-10 w-64 h-64 bg-primary/10 rounded-full opacity-50 blur-3xl"></div>
+              <div className="relative bg-primary/5 rounded-2xl p-8 flex items-center justify-center h-96">
                 <div className="text-center">
-                  <div className="w-32 h-32 bg-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <div className="w-32 h-32 bg-primary rounded-full mx-auto mb-4 flex items-center justify-center">
                     <svg
                       className="w-16 h-16 text-white"
                       fill="currentColor"
@@ -676,7 +676,7 @@ export default function Home() {
               <p className="text-sm text-gray-500 uppercase tracking-wide">
                 Quality by design
               </p>
-              <h2 className="text-4xl lg:text-5xl font-bold text-purple-900">
+              <h2 className="text-4xl lg:text-5xl font-bold text-primary">
                 Safe and secure.
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
@@ -684,7 +684,7 @@ export default function Home() {
                 medical information is always safe. Our platform is HIPAA
                 compliant and GDPR ready.
               </p>
-              <button className="bg-white text-purple-700 border-2 border-purple-700 px-6 py-3 rounded-full hover:bg-purple-50 transition-colors">
+              <button className="bg-white text-primary border-2 border-primary px-6 py-3 rounded-full hover:bg-primary/5 transition-colors">
                 Read more
               </button>
             </div>
@@ -701,7 +701,7 @@ export default function Home() {
               <p className="text-sm text-gray-500 uppercase tracking-wide">
                 Why wait & help
               </p>
-              <h2 className="text-4xl lg:text-5xl font-bold text-purple-900">
+              <h2 className="text-4xl lg:text-5xl font-bold text-primary">
                 Ready to give us a try?
               </h2>
               <p className="text-gray-600 text-lg leading-relaxed">
@@ -709,7 +709,7 @@ export default function Home() {
                 convenient, affordable, and high-quality online healthcare.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="flex items-center justify-center gap-2 bg-purple-700 text-white px-6 py-3 rounded-full hover:bg-purple-800 transition-colors">
+                <button className="flex items-center justify-center gap-2 bg-primary text-white px-6 py-3 rounded-full hover:bg-primary/90 transition-colors">
                   <svg
                     className="w-6 h-6"
                     fill="currentColor"
@@ -735,11 +735,11 @@ export default function Home() {
             {/* Right Column - Phone Mockup */}
             <div className="relative flex justify-center lg:justify-end">
               <div className="relative w-64 h-[600px]">
-                <div className="absolute -top-10 -right-10 w-64 h-64 bg-pink-100 rounded-full opacity-50 blur-3xl"></div>
+                <div className="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-full opacity-50 blur-3xl"></div>
                 <div className="relative bg-black rounded-[2.5rem] p-2 shadow-2xl">
                   <div className="bg-white rounded-[2rem] h-full overflow-hidden">
-                    <div className="bg-purple-700 text-white px-4 py-3 flex items-center justify-between">
-                      <span className="font-bold">Docta</span>
+                    <div className="bg-primary text-white px-4 py-3 flex items-center justify-between">
+                      <span className="font-bold">Palmcare AI</span>
                       <div className="flex gap-1">
                         <div className="w-1 h-1 bg-white rounded-full"></div>
                         <div className="w-1 h-1 bg-white rounded-full"></div>
@@ -754,9 +754,9 @@ export default function Home() {
                         anytime, anywhere via video call
                       </p>
                       <div className="mt-8 flex justify-center">
-                        <div className="w-32 h-32 bg-purple-200 rounded-full flex items-center justify-center">
+                        <div className="w-32 h-32 bg-primary/20 rounded-full flex items-center justify-center">
                           <svg
-                            className="w-16 h-16 text-purple-600"
+                            className="w-16 h-16 text-primary"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                           >
@@ -782,29 +782,29 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
-              <h3 className="text-2xl font-bold text-purple-700 mb-2">Docta</h3>
+              <h3 className="text-2xl font-bold text-primary mb-2">Palmcare AI</h3>
               <p className="text-sm text-gray-500">Medical Care</p>
             </div>
             <div>
               <h4 className="font-semibold text-gray-900 mb-4">Help</h4>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>
-                  <a href="#how-it-works" className="hover:text-purple-700">
+                  <a href="#how-it-works" className="hover:text-primary">
                     How it works
                   </a>
                 </li>
                 <li>
-                  <a href="#services" className="hover:text-purple-700">
+                  <a href="#services" className="hover:text-primary">
                     Our Service
                   </a>
                 </li>
                 <li>
-                  <a href="#pricing" className="hover:text-purple-700">
+                  <a href="#pricing" className="hover:text-primary">
                     Pricing & Insurance
                   </a>
                 </li>
                 <li>
-                  <a href="#faq" className="hover:text-purple-700">
+                  <a href="#faq" className="hover:text-primary">
                     FAQ
                   </a>
                 </li>
@@ -814,22 +814,22 @@ export default function Home() {
               <h4 className="font-semibold text-gray-900 mb-4">Resources</h4>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>
-                  <a href="#careers" className="hover:text-purple-700">
+                  <a href="#careers" className="hover:text-primary">
                     Careers
                   </a>
                 </li>
                 <li>
-                  <a href="#blog" className="hover:text-purple-700">
+                  <a href="#blog" className="hover:text-primary">
                     Blog
                   </a>
                 </li>
                 <li>
-                  <a href="#support" className="hover:text-purple-700">
+                  <a href="#support" className="hover:text-primary">
                     Help & Support
                   </a>
                 </li>
                 <li>
-                  <a href="#terms" className="hover:text-purple-700">
+                  <a href="#terms" className="hover:text-primary">
                     Terms
                   </a>
                 </li>
@@ -839,17 +839,17 @@ export default function Home() {
               <h4 className="font-semibold text-gray-900 mb-4">Company</h4>
               <ul className="space-y-2 text-sm text-gray-600">
                 <li>
-                  <a href="#about" className="hover:text-purple-700">
+                  <a href="#about" className="hover:text-primary">
                     About Us
                   </a>
                 </li>
                 <li>
-                  <a href="#contact" className="hover:text-purple-700">
+                  <a href="#contact" className="hover:text-primary">
                     Contact Us
                   </a>
                 </li>
                 <li>
-                  <a href="#privacy" className="hover:text-purple-700">
+                  <a href="#privacy" className="hover:text-primary">
                     Privacy Policy
                   </a>
                 </li>
@@ -858,10 +858,10 @@ export default function Home() {
           </div>
           <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-500 mb-4 md:mb-0">
-              © {new Date().getFullYear()} Docta. All rights reserved.
+              © {new Date().getFullYear()} Palmcare AI. All rights reserved.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-gray-400 hover:text-purple-700">
+              <a href="#" className="text-gray-400 hover:text-primary">
                 <svg
                   className="w-5 h-5"
                   fill="currentColor"
@@ -870,7 +870,7 @@ export default function Home() {
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                 </svg>
               </a>
-              <a href="#" className="text-gray-400 hover:text-purple-700">
+              <a href="#" className="text-gray-400 hover:text-primary">
                 <svg
                   className="w-5 h-5"
                   fill="currentColor"
@@ -879,7 +879,7 @@ export default function Home() {
                   <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
                 </svg>
               </a>
-              <a href="#" className="text-gray-400 hover:text-purple-700">
+              <a href="#" className="text-gray-400 hover:text-primary">
                 <svg
                   className="w-5 h-5"
                   fill="currentColor"
@@ -888,7 +888,7 @@ export default function Home() {
                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                 </svg>
               </a>
-              <a href="#" className="text-gray-400 hover:text-purple-700">
+              <a href="#" className="text-gray-400 hover:text-primary">
                 <svg
                   className="w-5 h-5"
                   fill="currentColor"
