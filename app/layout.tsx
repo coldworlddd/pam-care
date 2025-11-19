@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Docta - Your favourite online clinic",
+  title: "Pamcare - Your favourite online clinic",
   description: "Same day treatment with board-certified practitioners. Get prescriptions and treatment plans from the comfort of your home.",
 };
 
