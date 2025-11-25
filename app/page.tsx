@@ -1,8 +1,9 @@
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-
 
       {/* Hero Section */}
       <section className="container mx-auto px-6 py-16 lg:py-24">
@@ -186,7 +187,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                  <div className="shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                     <svg
                       className="w-6 h-6 text-primary"
                       fill="none"
@@ -242,22 +243,13 @@ export default function Home() {
             <div className="lg:order-1 relative">
               <div className="absolute -top-10 -left-10 w-64 h-64 bg-primary/10 rounded-full opacity-50 blur-3xl"></div>
               <div className="relative bg-primary/10 rounded-2xl p-8 flex items-center justify-center h-96">
-                <div className="text-center">
-                  <div className="w-32 h-32 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <svg
-                      className="w-16 h-16 text-primary"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <p className="text-gray-600">Person with smartphone</p>
-                </div>
+                <Image
+                  src="/man-phone.jpeg"
+                  alt="Man with phone"
+                  width={500}
+                  height={500}
+                  className="w-full h-full object-cover rounded-2xl"
+                />
               </div>
             </div>
           </div>
@@ -285,22 +277,13 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute -top-10 -left-10 w-64 h-64 bg-primary/10 rounded-2xl opacity-50 blur-3xl"></div>
                 <div className="relative bg-primary/5 rounded-2xl p-8 flex items-center justify-center h-96">
-                  <div className="text-center">
-                    <div className="w-32 h-32 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
-                      <svg
-                        className="w-16 h-16 text-primary"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                    <p className="text-gray-600">Older man with smartphone</p>
-                  </div>
+                  <Image
+                    src="/older-man.jpeg"
+                    alt="Man with phone"
+                    width={500}
+                    height={500}
+                    className="w-full h-full object-cover rounded-2xl"
+                  />
                 </div>
               </div>
               <div className="space-y-4">
@@ -419,22 +402,13 @@ export default function Home() {
               <div className="relative lg:order-1">
                 <div className="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-2xl opacity-50 blur-3xl"></div>
                 <div className="relative bg-primary/5 rounded-2xl p-8 flex items-center justify-center h-96">
-                  <div className="text-center">
-                    <div className="w-32 h-32 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
-                      <svg
-                        className="w-16 h-16 text-primary"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                    <p className="text-gray-600">Doctor with clipboard</p>
-                  </div>
+                  <Image
+                    src="/clipboard.jpeg"
+                    alt="clipboard"
+                    width={500}
+                    height={500}
+                    className="w-full h-full object-cover rounded-2xl"
+                  />
                 </div>
               </div>
             </div>
@@ -444,18 +418,13 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute -top-10 -left-10 w-64 h-64 bg-primary/10 rounded-2xl opacity-50 blur-3xl"></div>
                 <div className="relative bg-primary/5 rounded-2xl p-8 flex items-center justify-center h-96">
-                  <div className="text-center">
-                    <div className="w-32 h-32 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
-                      <svg
-                        className="w-16 h-16 text-primary"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4zM18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" />
-                      </svg>
-                    </div>
-                    <p className="text-gray-600">Person with credit card</p>
-                  </div>
+                  <Image
+                    src="/credit-card.jpeg"
+                    alt="credit card"
+                    width={500}
+                    height={500}
+                    className="w-full h-full object-cover rounded-2xl"
+                  />
                 </div>
               </div>
               <div className="space-y-4">
@@ -498,9 +467,7 @@ export default function Home() {
                   </div>
                   <div className="border-t border-gray-200 pt-3 flex justify-between items-center">
                     <span className="font-semibold">Total</span>
-                    <span className="text-2xl font-bold text-primary">
-                      $39
-                    </span>
+                    <span className="text-2xl font-bold text-primary">$39</span>
                   </div>
                 </div>
               </div>
@@ -589,22 +556,13 @@ export default function Home() {
               <div className="relative lg:order-1">
                 <div className="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-2xl opacity-50 blur-3xl"></div>
                 <div className="relative bg-primary/5 rounded-2xl p-8 flex items-center justify-center h-96">
-                  <div className="text-center">
-                    <div className="w-32 h-32 bg-white rounded-full mx-auto mb-4 flex items-center justify-center">
-                      <svg
-                        className="w-16 h-16 text-primary"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                    <p className="text-gray-600">Smiling man with smartphone</p>
-                  </div>
+                  <Image
+                    src="/smile.jpg"
+                    alt="Man with phone"
+                    width={500}
+                    height={500}
+                    className="w-full h-full object-cover rounded-2xl"
+                  />
                 </div>
               </div>
             </div>
@@ -620,22 +578,13 @@ export default function Home() {
             <div className="relative">
               <div className="absolute -top-10 -left-10 w-64 h-64 bg-primary/10 rounded-full opacity-50 blur-3xl"></div>
               <div className="relative bg-primary/5 rounded-2xl p-8 flex items-center justify-center h-96">
-                <div className="text-center">
-                  <div className="w-32 h-32 bg-primary rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <svg
-                      className="w-16 h-16 text-white"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </div>
-                  <p className="text-gray-600">Doctor with security shield</p>
-                </div>
+                <Image
+                  src="/doctor-shield.jpg"
+                  alt="Man with phone"
+                  width={500}
+                  height={500}
+                  className="w-full h-full object-cover rounded-2xl"
+                />
               </div>
             </div>
 
@@ -744,7 +693,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-    </div >
+    </div>
   );
 }
