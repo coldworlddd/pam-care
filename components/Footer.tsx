@@ -28,8 +28,7 @@ export default function Footer() {
                                 </Link>
                             </li>
                         </ul>
-                    </div>
-                    {/* Added placeholders for other columns to match original design roughly or keep it simple */}
+                    </div> {/* Added placeholders for other columns to match original design roughly or keep it simple */}
                     <div>
                         <h4 className="font-semibold text-gray-900 mb-4">Legal</h4>
                         <ul className="space-y-2 text-sm text-gray-600">
