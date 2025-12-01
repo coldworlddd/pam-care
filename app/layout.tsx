@@ -16,7 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Pamcare - Your favourite online clinic",
-  description: "Same day treatment with board-certified practitioners. Get prescriptions and treatment plans from the comfort of your home.",
+  description:
+    "Same day treatment with board-certified practitioners. Get prescriptions and treatment plans from the comfort of your home.",
 };
 
 export default function RootLayout({
@@ -26,9 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${dmSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${dmSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar />
         {children}
         <Footer />

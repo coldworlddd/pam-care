@@ -1,7 +1,7 @@
 export default function Services() {
   return (
     <div className="min-h-screen bg-white">
-      <section className="bg-primary/5 py-20">
+      <section className="pt-40 bg-primary/5 py-20">
         <div className="container mx-auto px-6 text-center">
           <h1 className="text-4xl lg:text-5xl font-bold text-primary mb-6">
             Our Services

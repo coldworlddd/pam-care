@@ -1,148 +1,62 @@
+import Smile from "@/components/Smile";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
 
-      {/* Hero Section */}
-      <section className="container mx-auto px-6 py-16 lg:py-24">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column */}
-          <div className="space-y-8">
-            <h2 className="text-5xl lg:text-6xl font-bold text-primary leading-tight">
-              Smarter Care for Complex Health Needs.{" "}
-            </h2>
-            <ul className="space-y-4 text-gray-700 text-lg">
-              <li className="flex items-center gap-3">
-                <span className="text-primary font-semibold">1.</span>
-                <span>Personalized AI Checkups and Risk Alerts</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="text-primary font-semibold">2.</span>
-                <span>
-                  Dedicated Trackers for Arthritis, Pregnancy, & Malaria
-                </span>
-              </li>
-              <li className="flex items-center gap-3">
-                <span className="text-primary font-semibold">3.</span>
-                <span>Trusted Resource Library, and Symptom Guidance</span>
-              </li>
-            </ul>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="flex items-center justify-center gap-2 bg-primary text-white px-6 py-3 rounded-full hover:bg-primary/90 transition-colors">
-                <svg
-                  className="w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.96-3.24-1.44-1.41-.59-2.3-.96-3.65-1.49C2.87 15.89 2 14 2 12c0-2 1-3.89 2.99-4.75 1.35-.53 2.24-.9 3.65-1.49 1.16-.48 2.15-.94 3.24-1.44 1.03-.47 2.1-.55 3.08.4 1.18 1.14 2.55 2.67 3.93 4.25.28.32.53.59.7.82.18.24.31.46.39.65.25.63.23 1.24-.03 1.79-.09.21-.26.45-.44.7-.17.23-.42.5-.7.82-1.38 1.58-2.75 3.11-3.93 4.25z" />
-                </svg>
-                Download on the Apple Store
-              </button>
-              <button className="flex items-center justify-center gap-2 bg-white text-gray-800 border-2 border-gray-200 px-6 py-3 rounded-full hover:border-gray-300 transition-colors">
-                <svg
-                  className="w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
-                </svg>
-                Get it on Google Play
-              </button>
-            </div>
-            <div className="flex gap-8">
-              <div className="flex items-center gap-2">
-                <svg
-                  className="w-5 h-5 text-primary"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" />
-                </svg>
-                <span className="text-gray-700 font-medium">
-                  Thousands of Lives Supported{" "}
-                </span>
-              </div>
-              <div className="flex items-center gap-2">
-                <svg
-                  className="w-5 h-5 text-primary"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                </svg>
-                <span className="text-gray-700 font-medium">
-                  Highly Rated for Specialized Guidance{" "}
-                </span>
+      <section className="relative pt-4xl bg-[#0C1D0D] text-white overflow-hidden">
+        {/* Hero Content */}
+        <div className=" relative z-10 flex flex-col min-h-screen items-center justify-end  px-10 md:px-6 text-center">
+          <h1
+            style={{ letterSpacing: -3 }}
+            className="text-3xl pt-40 leading-6 md:leading-12 md:text-5xl lg:text-5xl font-bold"
+          >
+            <span className="text-transparent bg-clip-text bg-primary">
+              Smarter Care
+            </span>
+            <span> for</span>
+            <span className="block mt-2">Complex Health Needs.</span>
+          </h1>
+
+          <p className="md:mt-8 mt-4 max-w-lg text-sm md:text-md text-white leading-relaxed">
+            Personalized AI checkups, smart condition trackers, and a trusted
+            symptom-guidance library —all in one simple health platform.
+          </p>
+
+          <div className="absolute top-1/2 md:top-auto ">
+            <Image
+              src="/pamcare-hero-grid.png" // Replace with your actual phone mockup image
+              alt="PamCare AI App on iPhone"
+              width={880}
+              height={780}
+              className="relative z-10 drop-shadow-2xl"
+              priority
+            />
+          </div>
+
+          {/* Phone Mockup */}
+          <div className=" relative md:mt-16 mt-40 max-w-md mx-auto">
+            <div className="relative">
+              <Image
+                src="/pamcare-phone.png" // Replace with your actual phone mockup image
+                alt="PamCare AI App on iPhone"
+                width={400}
+                height={780}
+                className="relative z-10 drop-shadow-2xl"
+                priority
+              />
+
+              {/* Glow effect behind phone */}
+              <div className="absolute inset-0 blur-3xl">
+                <div className="w-full h-full bg-gradient-to-b from-emerald-500/30 to-teal-600/20 rounded-3xl" />
               </div>
             </div>
           </div>
-
-          {/* Right Column - Phone Mockup */}
-          <div className="relative flex justify-center lg:justify-end">
-            <div className="relative w-64 h-[600px]">
-              {/* Decorative circle */}
-              <div className="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-full opacity-50 blur-3xl"></div>
-
-              {/* Phone frame */}
-              <div className="relative bg-black rounded-[2.5rem] p-2 shadow-2xl">
-                <div className="bg-white rounded-[2rem] h-full overflow-hidden">
-                  {/* Phone header */}
-                  <div className="bg-primary text-white px-4 py-3 flex items-center justify-between">
-                    <span className="font-bold">Palmcare AI</span>
-                    <div className="flex gap-1">
-                      <div className="w-1 h-1 bg-white rounded-full"></div>
-                      <div className="w-1 h-1 bg-white rounded-full"></div>
-                      <div className="w-1 h-1 bg-white rounded-full"></div>
-                    </div>
-                  </div>
-
-                  {/* Phone content */}
-                  <div className="p-4 space-y-4">
-                    <h3 className="font-semibold text-lg">Consult a doctor</h3>
-                    <p className="text-sm text-gray-600">
-                      anytime, anywhere via video call
-                    </p>
-
-                    {/* Chat messages */}
-                    <div className="space-y-3 mt-6">
-                      <div className="bg-gray-100 rounded-lg p-3">
-                        <p className="text-sm">
-                          Hello I&apos;m suffering from fever since 3 days.
-                        </p>
-                      </div>
-                      <div className="bg-primary/10 rounded-lg p-3 ml-4">
-                        <p className="text-sm">
-                          Okay, no worries we will know how you get now?
-                        </p>
-                      </div>
-                    </div>
-
-                    <button className="w-full bg-primary text-white py-3 rounded-lg font-medium">
-                      Doctor Online
-                    </button>
-
-                    {/* Doctor image placeholder */}
-                    <div className="mt-8 flex justify-center">
-                      <div className="w-32 h-32 bg-primary/20 rounded-full flex items-center justify-center">
-                        <svg
-                          className="w-16 h-16 text-primary"
-                          fill="currentColor"
-                          viewBox="0 0 20 20"
-                        >
-                          <path
-                            fillRule="evenodd"
-                            d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                            clipRule="evenodd"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="z-10 w-screen absolute bottom-0 left-0">
+            <div className="w-full h-40 bg-linear-to-b from-transparent to-[#0C1D0D] rounded-3xl" />
           </div>
         </div>
       </section>
