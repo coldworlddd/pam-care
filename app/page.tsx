@@ -61,552 +61,221 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Smart and Affordable Section */}
-      <section className="bg-gray-50 py-20">
+      {/* Our Services Section */}
+      <section className="py-24 bg-[#F6FFF7]">
         <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Right Column - Text */}
-            <div className="lg:order-2 space-y-8">
-              <p className="text-sm text-gray-500 uppercase tracking-wide">
-                Why simple is better
-              </p>
-              <h2 className="text-4xl lg:text-5xl font-bold text-primary">
-                Smart and affordable.
-              </h2>
-              <div className="space-y-6">
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                    <svg
-                      className="w-6 h-6 text-primary"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg mb-1">
-                      Always available
-                    </h3>
-                    <p className="text-gray-600">
-                      Skip the trip and start your visit any time with any
-                      device.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                    <svg
-                      className="w-6 h-6 text-primary"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg mb-1">
-                      A price that doesn&apos;t hurt
-                    </h3>
-                    <p className="text-gray-600">
-                      Your visit is $39 - and even less with insurance.
-                    </p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                    <svg
-                      className="w-6 h-6 text-primary"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-lg mb-1">
-                      Prescriptions & treatment plans
-                    </h3>
-                    <p className="text-gray-600">
-                      You&apos;ll get a customized treatment plan, plus.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Left Column - Image placeholder */}
-            <div className="lg:order-1 relative">
-              <div className="absolute -top-10 -left-10 w-64 h-64 bg-primary/10 rounded-full opacity-50 blur-3xl"></div>
-              <div className="relative bg-primary/10 rounded-2xl p-8 flex items-center justify-center h-96">
-                <Image
-                  src="/man-phone.jpeg"
-                  alt="Man with phone"
-                  width={500}
-                  height={500}
-                  className="w-full h-full object-cover rounded-2xl"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Step by Step Guide Section */}
-      <section id="how-it-works" className="py-20">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <p className="text-sm text-gray-500 uppercase tracking-wide mb-2">
-              How it works
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <p className="text-sm font-medium text-gray-600 mb-4">
+              Our services
             </p>
-            <h2 className="text-4xl lg:text-5xl font-bold text-primary">
-              A step by step guide
+            <h2 className="text-4xl md:text-5xl font-bold text-[#0C1D0D] mb-6 tracking-tight">
+              Everything You Need.
+              <br />
+              Nothing You Don&apos;t.
             </h2>
-            <p className="text-xl text-gray-600 mt-2">
-              Your 24/7 online clinic
+            <p className="text-gray-600 text-lg">
+              Comprehensive Healthcare management designed with simplicity and
+              security in mind
             </p>
           </div>
 
-          <div className="space-y-20">
-            {/* Step 1 */}
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="relative">
-                <div className="absolute -top-10 -left-10 w-64 h-64 bg-primary/10 rounded-2xl opacity-50 blur-3xl"></div>
-                <div className="relative bg-primary/5 rounded-2xl p-8 flex items-center justify-center h-96">
-                  <Image
-                    src="/older-man.jpeg"
-                    alt="Man with phone"
-                    width={500}
-                    height={500}
-                    className="w-full h-full object-cover rounded-2xl"
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Card 1: Easy Book Appointment */}
+            <div className="bg-[#F3F4F6] p-8 rounded-3xl hover:bg-white hover:shadow-xl transition-all duration-300 group">
+              <div className="w-14 h-14 bg-[#E5E7EB] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
+                <svg
+                  className="w-7 h-7 text-[#0C1D0D] group-hover:text-primary transition-colors"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                   />
-                </div>
+                </svg>
               </div>
-              <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-primary">
-                  Answer a few questions
-                </h3>
-                <p className="text-gray-600 text-lg">
-                  We gather your basic health information to help us understand
-                  your condition better and connect you with the right doctor.
-                </p>
-                <div className="bg-white border border-gray-200 rounded-lg p-4 space-y-3">
-                  <div className="flex justify-between items-center">
-                    <span className="text-gray-600">Gender</span>
-                    <svg
-                      className="w-5 h-5 text-gray-400"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  </div>
-                  <div className="border-t border-gray-200 pt-3 flex justify-between items-center">
-                    <span className="text-gray-600">Age</span>
-                    <svg
-                      className="w-5 h-5 text-gray-400"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  </div>
-                  <div className="border-t border-gray-200 pt-3 flex justify-between items-center">
-                    <span className="text-gray-600">Weight</span>
-                    <svg
-                      className="w-5 h-5 text-gray-400"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  </div>
-                  <div className="border-t border-gray-200 pt-3 flex justify-between items-center">
-                    <span className="text-gray-600">Height</span>
-                    <svg
-                      className="w-5 h-5 text-gray-400"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  </div>
-                  <div className="border-t border-gray-200 pt-3 flex justify-between items-center">
-                    <span className="text-gray-600">Location</span>
-                    <svg
-                      className="w-5 h-5 text-gray-400"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M19 9l-7 7-7-7"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
+              <h3 className="text-2xl font-bold text-[#0C1D0D] mb-3">
+                Easy Book Appointment
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Find doctors and book visit within seconds. Browse by specialty,
+                location and availability.
+              </p>
             </div>
 
-            {/* Step 2 */}
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="space-y-4 lg:order-2">
-                <h3 className="text-2xl font-bold text-primary">
-                  Diagnosis by real people, really fast
-                </h3>
-                <p className="text-gray-600 text-lg">
-                  Our board-certified doctors will review your information,
-                  provide a diagnosis, and create a personalized treatment plan.
-                  You can chat with them directly.
-                </p>
-                <div className="bg-white border border-gray-200 rounded-lg p-4">
-                  <p className="text-sm text-gray-700 mb-2">
-                    Medical information and diagnosis details...
-                  </p>
-                  <button className="text-primary font-medium text-sm">
-                    View more →
-                  </button>
-                </div>
-              </div>
-              <div className="relative lg:order-1">
-                <div className="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-2xl opacity-50 blur-3xl"></div>
-                <div className="relative bg-primary/5 rounded-2xl p-8 flex items-center justify-center h-96">
-                  <Image
-                    src="/clipboard.jpeg"
-                    alt="clipboard"
-                    width={500}
-                    height={500}
-                    className="w-full h-full object-cover rounded-2xl"
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Step 3 */}
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="relative">
-                <div className="absolute -top-10 -left-10 w-64 h-64 bg-primary/10 rounded-2xl opacity-50 blur-3xl"></div>
-                <div className="relative bg-primary/5 rounded-2xl p-8 flex items-center justify-center h-96">
-                  <Image
-                    src="/credit-card.jpeg"
-                    alt="credit card"
-                    width={500}
-                    height={500}
-                    className="w-full h-full object-cover rounded-2xl"
-                  />
-                </div>
-              </div>
-              <div className="space-y-4">
-                <h3 className="text-2xl font-bold text-primary">
-                  Payment & Insurance
-                </h3>
-                <p className="text-gray-600 text-lg">
-                  We accept most major insurance plans and offer transparent
-                  pricing for self-pay patients. Your payment information is
-                  secure.
-                </p>
-                <div className="bg-white border border-gray-200 rounded-lg p-4 space-y-3">
-                  <div>
-                    <label className="text-sm text-gray-600">Card number</label>
-                    <input
-                      type="text"
-                      className="w-full mt-1 px-3 py-2 border border-gray-200 rounded"
-                      placeholder="1234 5678 9012 3456"
-                    />
-                  </div>
-                  <div className="grid grid-cols-2 gap-3">
-                    <div>
-                      <label className="text-sm text-gray-600">
-                        Expiry date
-                      </label>
-                      <input
-                        type="text"
-                        className="w-full mt-1 px-3 py-2 border border-gray-200 rounded"
-                        placeholder="MM/YY"
-                      />
-                    </div>
-                    <div>
-                      <label className="text-sm text-gray-600">CVV</label>
-                      <input
-                        type="text"
-                        className="w-full mt-1 px-3 py-2 border border-gray-200 rounded"
-                        placeholder="123"
-                      />
-                    </div>
-                  </div>
-                  <div className="border-t border-gray-200 pt-3 flex justify-between items-center">
-                    <span className="font-semibold">Total</span>
-                    <span className="text-2xl font-bold text-primary">$39</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Step 4 */}
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="space-y-4 lg:order-2">
-                <h3 className="text-2xl font-bold text-primary">
-                  Start feeling better
-                </h3>
-                <p className="text-gray-600 text-lg">
-                  Once your treatment plan is in place, you can start feeling
-                  better. We&apos;ll follow up with you to ensure your recovery
-                  is on track.
-                </p>
-                <div className="bg-white border border-gray-200 rounded-lg p-4 space-y-3">
-                  <div className="flex items-center gap-3">
-                    <div className="w-5 h-5 border-2 border-primary rounded flex items-center justify-center">
-                      <svg
-                        className="w-3 h-3 text-primary"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                    <span className="text-gray-700">Take your medication</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-5 h-5 border-2 border-primary rounded flex items-center justify-center">
-                      <svg
-                        className="w-3 h-3 text-primary"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                    <span className="text-gray-700">Rest</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-5 h-5 border-2 border-primary rounded flex items-center justify-center">
-                      <svg
-                        className="w-3 h-3 text-primary"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                    <span className="text-gray-700">
-                      Drink plenty of fluids
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-5 h-5 border-2 border-primary rounded flex items-center justify-center">
-                      <svg
-                        className="w-3 h-3 text-primary"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                    <span className="text-gray-700">Follow up with doctor</span>
-                  </div>
-                </div>
-              </div>
-              <div className="relative lg:order-1">
-                <div className="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-2xl opacity-50 blur-3xl"></div>
-                <div className="relative bg-primary/5 rounded-2xl p-8 flex items-center justify-center h-96">
-                  <Image
-                    src="/smile.jpg"
-                    alt="Man with phone"
-                    width={500}
-                    height={500}
-                    className="w-full h-full object-cover rounded-2xl"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Safe and Secure Section */}
-      <section className="bg-gray-50 py-20">
-        <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left Column - Image */}
-            <div className="relative">
-              <div className="absolute -top-10 -left-10 w-64 h-64 bg-primary/10 rounded-full opacity-50 blur-3xl"></div>
-              <div className="relative bg-primary/5 rounded-2xl p-8 flex items-center justify-center h-96">
+            {/* Card 2: Phone Mockup (Center) */}
+            <div className="bg-[#F3F4F6] rounded-3xl overflow-hidden relative group hover:shadow-xl transition-all duration-300 flex items-end justify-center pt-10">
+              <div className="relative w-48 transition-transform duration-500 group-hover:scale-105">
                 <Image
-                  src="/doctor-shield.jpg"
-                  alt="Man with phone"
-                  width={500}
-                  height={500}
-                  className="w-full h-full object-cover rounded-2xl"
+                  src="/splash-half.png"
+                  alt="PamCare App Interface"
+                  width={300}
+                  height={600}
+                  className="w-full h-auto drop-shadow-2xl"
                 />
               </div>
             </div>
 
-            {/* Right Column - Text */}
-            <div className="space-y-8">
-              <p className="text-sm text-gray-500 uppercase tracking-wide">
-                Quality by design
+            {/* Card 3: Digital Health Report */}
+            <div className="bg-[#F3F4F6] p-8 rounded-3xl hover:bg-white hover:shadow-xl transition-all duration-300 group">
+              <div className="w-14 h-14 bg-[#E5E7EB] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
+                <svg
+                  className="w-7 h-7 text-[#0C1D0D] group-hover:text-primary transition-colors"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-[#0C1D0D] mb-3">
+                Digital Health Report
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Access and your prescriptions. Lab results and medical history
+                securely.
               </p>
-              <h2 className="text-4xl lg:text-5xl font-bold text-primary">
-                Safe and secure.
-              </h2>
-              <p className="text-gray-600 text-lg leading-relaxed">
-                We use the latest security protocols to ensure your personal and
-                medical information is always safe. Our platform is HIPAA
-                compliant and GDPR ready.
+            </div>
+
+            {/* Card 4: Pharmacy */}
+            <div className="bg-[#F3F4F6] p-8 rounded-3xl hover:bg-white hover:shadow-xl transition-all duration-300 group">
+              <div className="w-14 h-14 bg-[#E5E7EB] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
+                <svg
+                  className="w-7 h-7 text-[#0C1D0D] group-hover:text-primary transition-colors"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M12 4v16m8-8H4"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-[#0C1D0D] mb-3">
+                Pharmacy
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Get the medicines you need fast. Check availability, compare
+                nearby pharmacies, and order your prescriptions with ease.
               </p>
-              <button className="bg-white text-primary border-2 border-primary px-6 py-3 rounded-full hover:bg-primary/5 transition-colors">
-                Read more
-              </button>
+            </div>
+
+            {/* Card 5: AI Powered */}
+            <div className="bg-[#F3F4F6] p-8 rounded-3xl hover:bg-white hover:shadow-xl transition-all duration-300 group">
+              <div className="w-14 h-14 bg-[#E5E7EB] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
+                <svg
+                  className="w-7 h-7 text-[#0C1D0D] group-hover:text-primary transition-colors"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-[#0C1D0D] mb-3">
+                AI Powered
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Our AI-powered chat helps you solve problems, find information,
+                and get guidance in seconds.
+              </p>
+            </div>
+
+            {/* Card 6: Secured & Encrypted */}
+            <div className="bg-[#F3F4F6] p-8 rounded-3xl hover:bg-white hover:shadow-xl transition-all duration-300 group">
+              <div className="w-14 h-14 bg-[#E5E7EB] rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary/10 transition-colors">
+                <svg
+                  className="w-7 h-7 text-[#0C1D0D] group-hover:text-primary transition-colors"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-[#0C1D0D] mb-3">
+                Secured & Encrypted
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Your data stays protected with advanced security and full
+                encryption.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Ready to Give Us a Try Section */}
-      <section className="py-20">
+      {/* Innovation & Technology Focus Section */}
+      <section className="py-24 bg-[#F6FFF7]">
         <div className="container mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Column - Text */}
             <div className="space-y-8">
-              <p className="text-sm text-gray-500 uppercase tracking-wide">
-                Why wait & help
+              <p className="text-sm font-medium text-gray-600 uppercase tracking-wide">
+                About us
               </p>
-              <h2 className="text-4xl lg:text-5xl font-bold text-primary">
-                Ready to give us a try?
+              <h2 className="text-4xl md:text-5xl font-bold text-[#0C1D0D] tracking-tight leading-tight">
+                Innovation & Technology
+                <br />
+                Focus
               </h2>
-              <p className="text-gray-600 text-lg leading-relaxed">
-                Join thousands of satisfied patients who have experienced
-                convenient, affordable, and high-quality online healthcare.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="flex items-center justify-center gap-2 bg-primary text-white px-6 py-3 rounded-full hover:bg-primary/90 transition-colors">
-                  <svg
-                    className="w-6 h-6"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M17.05 20.28c-.98.95-2.05.88-3.08.4-1.09-.5-2.08-.96-3.24-1.44-1.41-.59-2.3-.96-3.65-1.49C2.87 15.89 2 14 2 12c0-2 1-3.89 2.99-4.75 1.35-.53 2.24-.9 3.65-1.49 1.16-.48 2.15-.94 3.24-1.44 1.03-.47 2.1-.55 3.08.4 1.18 1.14 2.55 2.67 3.93 4.25.28.32.53.59.7.82.18.24.31.46.39.65.25.63.23 1.24-.03 1.79-.09.21-.26.45-.44.7-.17.23-.42.5-.7.82-1.38 1.58-2.75 3.11-3.93 4.25z" />
-                  </svg>
-                  Download on the Apple Store
-                </button>
-                <button className="flex items-center justify-center gap-2 bg-white text-gray-800 border-2 border-gray-200 px-6 py-3 rounded-full hover:border-gray-300 transition-colors">
-                  <svg
-                    className="w-6 h-6"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z" />
-                  </svg>
-                  Get it on Google Play
-                </button>
+              <div className="space-y-6 text-lg text-gray-600 leading-relaxed">
+                <p>
+                  We are an AI-powered digital health company focused on
+                  transforming how people manage everyday health challenges. By
+                  blending advanced machine learning, clinical knowledge, and
+                  thoughtful design, we deliver personalized guidance for users
+                  managing arthritis, pregnancy, and malaria.
+                </p>
+                <p>
+                  Our platform provides real-time insights, smart reminders, and
+                  seamless care coordination helping users stay informed,
+                  supported, and connected throughout their health journey.
+                </p>
               </div>
             </div>
 
-            {/* Right Column - Phone Mockup */}
-            <div className="relative flex justify-center lg:justify-end">
-              <div className="relative w-64 h-[600px]">
-                <div className="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-full opacity-50 blur-3xl"></div>
-                <div className="relative bg-black rounded-[2.5rem] p-2 shadow-2xl">
-                  <div className="bg-white rounded-[2rem] h-full overflow-hidden">
-                    <div className="bg-primary text-white px-4 py-3 flex items-center justify-between">
-                      <span className="font-bold">Palmcare AI</span>
-                      <div className="flex gap-1">
-                        <div className="w-1 h-1 bg-white rounded-full"></div>
-                        <div className="w-1 h-1 bg-white rounded-full"></div>
-                        <div className="w-1 h-1 bg-white rounded-full"></div>
-                      </div>
-                    </div>
-                    <div className="p-4 space-y-4">
-                      <h3 className="font-semibold text-lg">
-                        Consult a doctor
-                      </h3>
-                      <p className="text-sm text-gray-600">
-                        anytime, anywhere via video call
-                      </p>
-                      <div className="mt-8 flex justify-center">
-                        <div className="w-32 h-32 bg-primary/20 rounded-full flex items-center justify-center">
-                          <svg
-                            className="w-16 h-16 text-primary"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                          >
-                            <path
-                              fillRule="evenodd"
-                              d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                              clipRule="evenodd"
-                            />
-                          </svg>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            {/* Right Column - Image */}
+            <div className="relative bg-gray-50 rounded-[2.5rem]  flex items-center justify-center">
+              {/* Using pamcare-hero-grid.png as it likely contains the multiple phones view or similar */}
+              <Image
+                src="/about.png"
+                alt="PamCare App Interface Showcase"
+                width={600}
+                height={600}
+                className="w-full h-auto"
+              />
             </div>
           </div>
         </div>
       </section>
-    </div>
+
+      {/* Body */}
+
+
+
+
+    </div >
   );
 }
