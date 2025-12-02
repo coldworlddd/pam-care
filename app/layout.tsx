@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dmSans.variable} ${geistMono.variable} antialiased`}>
+      <body className={`${dmSans.variable} ${geistMono.variable} antialiased scroll-smooth`}>
         <Navbar />
         {children}
         <Footer />

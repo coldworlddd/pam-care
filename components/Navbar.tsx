@@ -27,10 +27,10 @@ export default function Navbar() {
       <header className="fixed w-full top-0 z-50 bg-[#0C1D0D99] backdrop-blur-xl ">
         <nav className="relative z-10 flex items-center justify-between px-6 py-4 md:px-8 lg:px-12">
           <div className="flex items-center gap-8 text-sm text-gray-300">
-            <Link href="/services" className="hover:text-white transition">
+            <Link href="/#services" className="hover:text-white transition">
               Our Services
             </Link>
-            <Link href="/about" className="hover:text-white transition">
+            <Link href="/#about" className="hover:text-white transition">
               About Us
             </Link>
             <Link href="/contact" className="hover:text-white transition">

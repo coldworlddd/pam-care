@@ -62,7 +62,7 @@ export default function Home() {
       </section>
 
       {/* Our Services Section */}
-      <section className="py-24 bg-[#F6FFF7]">
+      <section id="services" className="py-24 bg-[#F6FFF7]">
         <div className="container mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto mb-16">
             <p className="text-sm font-medium text-gray-600 mb-4">
@@ -227,7 +227,7 @@ export default function Home() {
       </section>
 
       {/* Innovation & Technology Focus Section */}
-      <section className="py-24 bg-[#F6FFF7]">
+      <section id="about" className="py-24 bg-[#F6FFF7]">
         <div className="container mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Left Column - Text */}
