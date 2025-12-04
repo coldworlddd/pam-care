@@ -176,16 +176,16 @@ export default function Home() {
                   <path
                     d="M36.3333 41.8889H37.7338C38.8364 41.8889 39.3877 41.8889 39.8307 42.1793C40.2737 42.4697 40.5203 42.9927 41.0134 44.0386L43.6666 49.6667L47.3333 38L49.9865 43.6281C50.4796 44.674 50.7261 45.197 51.1691 45.4874C51.6122 45.7778 52.1635 45.7778 53.266 45.7778H54.6666"
                     stroke="#101010"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M23 38.0002C23 34.9319 25.4873 32.4446 28.5556 32.4446H30.4074C31.2685 32.4446 31.699 32.4446 32.0523 32.35C33.0109 32.0931 33.7596 31.3444 34.0165 30.3858C34.1111 30.0325 34.1111 29.602 34.1111 28.7409V26.8891C34.1111 23.8208 36.5984 21.3335 39.6667 21.3335"
                     stroke="#101010"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinejoin="round"
+                    strokeLinecap="round"
                   />
                 </svg>
               </div>
@@ -212,23 +212,23 @@ export default function Home() {
                   <path
                     d="M21.3333 38.9375C21.3333 33.7815 21.3333 31.2035 23.0418 29.6018C24.7503 28 27.5002 28 32.9999 28H42.9999C48.4996 28 51.2495 28 52.958 29.6018C54.6666 31.2035 54.6666 33.7815 54.6666 38.9375V42.0625C54.6666 47.2185 54.6666 49.7965 52.958 51.3982C51.2495 53 48.4996 53 42.9999 53H32.9999C27.5002 53 24.7503 53 23.0418 51.3982C21.3333 49.7965 21.3333 47.2185 21.3333 42.0625V38.9375Z"
                     stroke="#181818"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M33 40.5H43M38 35.5L38 45.5"
                     stroke="#181818"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M46.3334 28C46.3334 23.8633 45.4701 23 41.3334 23H34.6667C30.5301 23 29.6667 23.8633 29.6667 28"
                     stroke="#181818"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </div>
