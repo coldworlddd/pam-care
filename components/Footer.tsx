@@ -91,58 +91,61 @@ export default function Footer() {
                             <h4 className="font-bold text-white mb-6">Company</h4>
                             <ul className="space-y-4 text-gray-400">
                                 <li>
-                                    <Link href="/services" className="hover:text-primary transition-colors">
+                                    <Link
+                                        href="/services"
+                                        className="hover:text-primary transition-colors"
+                                    >
                                         Our service
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/about" className="hover:text-primary transition-colors">
+                                    <Link
+                                        href="/about"
+                                        className="hover:text-primary transition-colors"
+                                    >
                                         About us
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/contact" className="hover:text-primary transition-colors">
-                                        Contact us
                                     </Link>
                                 </li>
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-bold text-white mb-6">Company</h4>
+                            <h4 className="font-bold text-white mb-6">Legal</h4>
                             <ul className="space-y-4 text-gray-400">
                                 <li>
-                                    <Link href="/services" className="hover:text-primary transition-colors">
-                                        Our service
+                                    <Link
+                                        href="/services"
+                                        className="hover:text-primary transition-colors"
+                                    >
+                                        Terms of use
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/about" className="hover:text-primary transition-colors">
-                                        About us
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/contact" className="hover:text-primary transition-colors">
-                                        Contact us
+                                    <Link
+                                        href="/about"
+                                        className="hover:text-primary transition-colors"
+                                    >
+                                        Privacy policy
                                     </Link>
                                 </li>
                             </ul>
                         </div>
                         <div>
-                            <h4 className="font-bold text-white mb-6">Company</h4>
+                            <h4 className="font-bold text-white mb-6">Support</h4>
                             <ul className="space-y-4 text-gray-400">
                                 <li>
-                                    <Link href="/services" className="hover:text-primary transition-colors">
-                                        Our service
+                                    <Link
+                                        href="/services"
+                                        className="hover:text-primary transition-colors"
+                                    >
+                                        Contact Us
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/about" className="hover:text-primary transition-colors">
-                                        About us
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/contact" className="hover:text-primary transition-colors">
-                                        Contact us
+                                    <Link
+                                        href="/about"
+                                        className="hover:text-primary transition-colors"
+                                    >
+                                        FAQ
                                     </Link>
                                 </li>
                             </ul>
