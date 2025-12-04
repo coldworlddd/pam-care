@@ -103,46 +103,51 @@ export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-      <header className="fixed w-full top-0 z-50 bg-[#0C1D0D99] backdrop-blur-xl ">
-        <nav className="relative z-10 flex items-center justify-between px-6 py-4 md:px-8 lg:px-12">
-          {/* Logo */}
-          <Link href="/" className="hover:text-white transition">
-            <div className="flex items-center gap-3">
-              <Image
-                src="/pamcare-logo.png"
-                alt="PamCare AI"
-                width={100}
-                height={20}
-                className="relative z-10 drop-shadow-2xl"
-                priority
-              />
+      <>
+        <header className="fixed w-full top-0 z-50 bg-[#0C1D0D99] backdrop-blur-xl ">
+          <nav className="relative z-10 flex items-center justify-between px-6 py-4 md:px-8 lg:px-12">
+            {/* Logo */}
+            <Link href="/" className=" hover:text-white transition">
+              <div className="flex items-center gap-3">
+                <Image
+                  src="/pamcare-logo-white.png"
+                  alt="PamCare AI"
+                  width={100}
+                  height={20}
+                  className="relative z-10 drop-shadow-2xl"
+                  priority
+                />
+              </div>
+            </Link>
+            <div className="flex items-center gap-6">
+              {/* Menu Icon */}
+              <div className="relative flex items-center gap-4">
+                <button onClick={() => setMobileMenuOpen(true)}>
+                  <MenuIcon />
+                </button>
+              </div>
             </div>
-          </Link>
-          <div className="flex items-center gap-6">
-            {/* Menu Icon */}
-            <div className="relative flex items-center gap-4">
-              <button onClick={() => setMobileMenuOpen(true)}>
-                <MenuIcon />
-              </button>
-            </div>
-          </div>
-        </nav>
+          </nav>
+        </header>
+
+        {/* Mobile Menu Backdrop */}
+        <div
+          className={`fixed inset-0 bg-black/50 z-[60] transition-opacity duration-300 ${mobileMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"
+            }`}
+          onClick={() => setMobileMenuOpen(false)}
+        />
 
         {/* Mobile Menu Overlay */}
         <div
-          className={`fixed  w-[70%] inset-0 bg-white z-50  transition-transform duration-300 ease-in-out ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+          className={`fixed right-0 top-0 w-[70%] h-full bg-white z-[70] transition-transform duration-300 ease-in-out ${mobileMenuOpen ? "translate-x-0" : "translate-x-full"
             }`}
         >
-          <div className="flex bg-white flex-col h-full p-6">
+          <div className="flex bg-white flex-col h-full p-6 py-4">
             {/* Header with Close Button */}
             <div className="flex items-center justify-between mb-12 ">
-              <Link href="/" onClick={() => setMobileMenuOpen(false)}>
+              <Link className="opacity-0" href="/" onClick={() => setMobileMenuOpen(false)}>
                 <Image
-                  src="/pamcare-logo.png" // Assuming a dark logo exists or using text if not. I'll use text for safety if image missing, or just the same logo if it works on white.
-                  // Actually, the design shows the logo in green/black on white. I'll try to use the same logo but maybe it needs a dark background?
-                  // Wait, the design shows "PamCare AI" text next to logo.
-                  // I will use the same logo image for now, assuming it's visible.
-                  // If not, I'll just use text "PamCare AI"
+                  src="/pamcare-logo.png"
                   alt="PamCare AI"
                   width={120}
                   height={24}
@@ -151,7 +156,7 @@ export default function Navbar() {
               </Link>
               <button
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-2 rounded-full hover:bg-gray-100 transition-colors"
+                className="rounded-full hover:bg-gray-100 transition-colors"
               >
                 <svg
                   width="32"
@@ -171,7 +176,7 @@ export default function Navbar() {
             </div>
 
             {/* Links */}
-            <div className="flex flex-col items-end justify-center flex-1 gap-8">
+            <div className="flex flex-col items-end justify-start flex-1 gap-8">
               <Link
                 href="/"
                 className="text-1xl font-medium text-gray-900 hover:text-primary transition-colors"
@@ -203,13 +208,13 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-      </header>
+      </>
     );
   };
 
   return (
-    <div>
-      <div className="md:block hidden ">
+    <div className="z-50 fixed">
+      <div className="md:block hidden">
         <WebNav />
       </div>
       <div className="md:hidden block">
