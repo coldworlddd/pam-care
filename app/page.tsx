@@ -246,7 +246,8 @@ export default function Home() {
                   transforming how people manage everyday health challenges. By
                   blending advanced machine learning, clinical knowledge, and
                   thoughtful design, we deliver personalized guidance for users
-                  managing arthritis, pregnancy, and malaria.
+                  managing arthritis, diabetes, high-blood pressure, pregnancy,
+                  and malaria.
                 </p>
                 <p>
                   Our platform provides real-time insights, smart reminders, and
@@ -272,10 +273,6 @@ export default function Home() {
       </section>
 
       {/* Body */}
-
-
-
-
-    </div >
+    </div>
   );
 }
