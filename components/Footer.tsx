@@ -3,6 +3,7 @@ import Facebook from "./Icons/Facebook";
 import Instagram from "./Icons/Instagram";
 import LinkedIn from "./Icons/LinkedIn";
 import TikTok from "./Icons/TikTok";
+import Image from "next/image";
 
 export default function Footer() {
     return (
@@ -12,19 +13,13 @@ export default function Footer() {
                 <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-12 mb-16">
                     <div className="max-w-md">
                         <div className="flex items-center gap-2 mb-6">
-                            <div className="w-8 h-8 text-primary">
-                                <svg
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                >
-                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                                </svg>
-                            </div>
-                            <span className="text-xl font-bold">PamCare AI</span>
+                            <Image
+                                src="/pamcare-logo.png"
+                                alt="PamCare AI"
+                                width={120}
+                                height={24}
+                                className="object-contain"
+                            />
                         </div>
                         <p className="text-gray-400 text-lg leading-relaxed">
                             Your personal health companion for a healthier, organized life
